@@ -8,6 +8,9 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
 })
 
+app.get('/json', function (req, res) {
+    res.send(JSON.stringify({"message": "Hello json"}))
+})
 
 
 
