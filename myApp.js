@@ -9,26 +9,10 @@ app.get('/', function (req, res) {
 })
 
 app.get('/json', function (req, res) {
-    res.send(JSON.stringify({"message": "Hello json"}))
+    res.json({
+        message: 'Hello json'
+    })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
